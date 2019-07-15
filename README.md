@@ -11,7 +11,10 @@ Analysis of Airbnb listings data
 
 ## Installation <a name="installation"></a>
 
-This code uses Python 3 and the packages listed at the top of the notebook. If the packages need installing, then all of them are available in PIP.
+This code uses Python 3 and the packages listed at the top of the notebook. 
+These are numpy, pandas, matplotlib, sklearn, seaborn, re and time.
+
+If the packages need installing, then all of them are available through PIP.
 
 ## Project Motivation<a name="motivation"></a>
 
@@ -33,7 +36,7 @@ There are also two folders:
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the post available [here](https://medium.com/).
+The main findings of the code can be found at the post available [here](https://medium.com/@sheffseankiely/how-to-maximise-your-income-on-airbnb-in-seattle-40b60a9acd7f?sk=bcd45e6e9feb43e99d7fe3de0580b136).
 A simple regression model was created to answer two of the questions. 
 Initial results had issues with multiple coefficients having the same value, and the conclusions that might be drawn from them not making sense. 
 The cause of this was that some of the variables were fully correlated, so these had to be dropped. For example where the dummy variable for 'Cable TV' was present, then the dummy variable for just 'TV' was also always set to true because it is a sub string of the former. The solution to this was to drop these variables, and this fixed the issue.
